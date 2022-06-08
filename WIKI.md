@@ -23,7 +23,7 @@ In this Immersion Day Lab, you will build time-series machine learning models an
 
 # Description
 
->Description yet to be added
+This lab demonstrates how to build state of the art predictive models using different techniques. It covers building the models from scratch using code based approach in the Cloud Pak for Data environment which will be helpful for the Data Scientists, ML Engineers & architects. It also covers building accurate predictive models using No-Code approach through guided Machine Learning technique which will be helpful for Data Stewards, analysts & more. Deploying the models for real-time scoring can be done quickly to aid production workloads. 
 
 The intent of this workshop is to educate users about the features of IBM Cloud Pak for Data running on AWS.
 
