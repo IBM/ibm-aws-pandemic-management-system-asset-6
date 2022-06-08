@@ -23,7 +23,7 @@ In this Immersion Day Lab, you will build time-series machine learning models an
 
 # Description
 
->Add more description here
+>Description yet to be added
 
 The intent of this workshop is to educate users about the features of IBM Cloud Pak for Data running on AWS.
 
