@@ -71,7 +71,7 @@ Create a S3 bucket in AWS by refering to the AWS documentation.
 * Click on **New Project**.
   * Select project type as **Analytics project**.
   * Click on **Create a project from file**.
-  * Upload the **[IBM-AWS-Immersion-Day-Lab-4.zip](project/IBM-AWS-Immersion-Day-Lab-4.zip)** file.
+  * Upload the **[cpd-project.zip](project/cpd-project.zip)** file.
   * Enter a project name and click on **Create**.
 
 * Once the project is created click on **View Project**. You should see the overview of the project as shown below.
@@ -330,7 +330,7 @@ Create an AutoAI experiment by giving it a name & select the environment definit
 
 ![](doc/source/images/create-autoai.png)
 
-Add the data file by selecting Browse or Select from project. Navigate to [Data](https://github.ibm.com/manoj-jahgirdar/ibm-aws-immersion-day-lab-4/tree/main/data) section and download the RI-data-ML.csv file.
+Add the data file by selecting Browse or Select from project. Select the [RI-data-ML.csv](data/RI-data-ML.csv) file from the project.
 
 ![](doc/source/images/add-data.png)
 
