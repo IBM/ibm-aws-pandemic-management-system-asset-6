@@ -1,10 +1,10 @@
 # Short Title
 
-IBM-AWS Immersion Day Lab 4
+Build machine learning models on IBM and AWS
 
 # Long Title
 
-Build machine learning models with no code in a collaborative data science environment.
+Build machine learning models with code/no code in a collaborative data science environment.
 
 # Author
 
@@ -19,7 +19,7 @@ Build machine learning models with no code in a collaborative data science envir
 
 # Summary
 
-In this Immersion Day Lab, you will build time-series machine learning models and visualize the results using IBM Cloud Pak for Data Jupyter Notebooks, AutoAI and Embedded Dashboard on Amazon Web Services (AWS) Cloud. Developers will learn both **Code** and **No Code** approach to build models and visualize them.  
+In this Code pattern, you will build time-series machine learning models and visualize the results using IBM Cloud Pak for Data Jupyter Notebooks, AutoAI and Embedded Dashboard on Amazon Web Services (AWS) Cloud. Developers will learn both **Code** and **No Code** approach to build models and visualize the results.  
 
 # Description
 
@@ -37,7 +37,7 @@ Once you complete the code pattern, you will learn to:
 
 ![architecture](doc/source/images/architecture.png)
 
-1. Pre-processed datasets from Lab 1 are loaded into an Amazon S3 bucket
+1. Pre-processed datasets are loaded into an Amazon S3 bucket
 2. The datasets from the S3 bucket are read in Jupyter Notebooks
 3. Different models are built and evaluated in Jupyter Notebooks and the final prediction data is stored back into S3 bucket
 4. The datasets from the S3 bucket is copied into Watson Studio Project and loaded into AutoAI. Different models are built and compared in AutoAI with no code
