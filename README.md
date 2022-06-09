@@ -1,8 +1,8 @@
-# IBM-AWS Immersion Day Lab 4
+# Build machine learning models with code/no code in a collaborative data science environment
 
-In this Immersion Day Lab, you will build time-series machine learning models and visualize the results using IBM Cloud Pak for Data Jupyter Notebooks, AutoAI and Embedded Dashboard on Amazon Web Services (AWS) Cloud. Developers will learn both **Code** and **No Code** approach to build models and visualize them.  
+In this code pattern, you will build time-series machine learning models and visualize the results using IBM Cloud Pak for Data Jupyter Notebooks, AutoAI and Embedded Dashboard on Amazon Web Services (AWS) Cloud. Developers will learn both **Code** and **No Code** approach to build models and visualize the results.  
 
-When you have completed this Lab, you will understand how to:
+When you have completed this code pattern, you will understand how to:
 
 * Build a state of the art Long Short Term Memory(LSTM) prediction models using IBM Cloud Pak for Data Jupyter Notebook
 * Visualize the actual vs predicted values in IBM Cloud Pak for Data Cognos Dashboard Embedded
@@ -12,7 +12,7 @@ When you have completed this Lab, you will understand how to:
 
 ## Flow
 
-1. Pre-processed datasets from Lab 1 are loaded into an Amazon S3 bucket
+1. Pre-processed datasets are loaded into an Amazon S3 bucket
 2. The datasets from the S3 bucket are read in Jupyter Notebooks
 3. Different models are built and evaluated in Jupyter Notebooks and the final prediction data is stored back into S3 bucket
 4. The datasets from the S3 bucket is copied into Watson Studio Project and loaded into AutoAI. Different models are built and compared in AutoAI with no code
@@ -508,7 +508,7 @@ The Dashboard is interactive, you can click on any data point from the dashboard
 
 ## Summary
 
-You have learnt how to build time-series and decision tree machine learning models on IBM Cloud Pak for Data Jupyter Notebooks and visualize the results on IBM Cloud Pak for Data Embedded Dashboard on Amazon Web Services (AWS) Cloud with **Code Approach**. You also learnt how to build models and deploy them with AutoAI under **No Code Approach**.
+In this code pattern, you learn't how to build time-series and decision tree machine learning models on IBM Cloud Pak for Data Jupyter Notebooks and visualize the results on IBM Cloud Pak for Data Embedded Dashboard on Amazon Web Services (AWS) Cloud with **Code Approach**. You also learnt how to build models and deploy them with AutoAI under **No Code Approach**.
 
 <!-- keep this -->
 ## License
