@@ -430,7 +430,7 @@ We can see the predicted value is 1 under Result section which means the risk in
 
 We have learnt how to build AI predictive models without any code, deploy the model and generate predictions. Feel free to play around to get comfortable using AutoAI for generating accurate predictions.
 
-## 4. Visualize the Predictions in IBM Cloud Pak for Data Cognos Embedded Dashboard
+## 5. Visualize the Predictions in IBM Cloud Pak for Data Cognos Embedded Dashboard
 
 In this section, you will learn how to build responsive data visualization in Watson Studio's Cognos Embedded Dashboard. You can build interactive charts, tables, graphs, etc in the Cognos Embedded Dashboard. You will use the data generated in the previous lab exercise to build the following visualizations:
 
