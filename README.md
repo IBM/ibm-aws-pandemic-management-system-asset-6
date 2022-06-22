@@ -35,7 +35,7 @@ Coming soon!
     * 3.3. [Run LSTM Notebook 2](#33-notebook-2--predict-future-covid-19-cases-for-wallonia-region-with-long-short-term-memory-lstm-model)
     * 3.4. [Run Decision Tree Notebook](#34-notebook-3--risk-index-prediction-with-decision-tree)
 
-4. [No Code: Build Prediction Models with IBM Cloud Pak for Data using AutoAI](#4-no-code-build-prediction-models-with-ibm-cloud-pak-for-data-using-autoai)
+4. [No Code Approach : Build Prediction Models with IBM Cloud Pak for Data using AutoAI](#4-no-code-approach-build-prediction-models-with-ibm-cloud-pak-for-data-using-autoai)
 5. [Visualize the Predictions in IBM Cloud Pak for Data Cognos Embedded Dashboard](#5-visualize-the-predictions-in-ibm-cloud-pak-for-data-cognos-embedded-dashboard)
 
     * 5.1. [Setup Cognos Embedded Dashboard](#51-setup-cognos-embedded-dashboard)
@@ -320,7 +320,7 @@ You have successfully completed this lab exercise.
 
 >Note: Next steps - [Visualize the Data in Cognos Embedded Dashboard](/020_start-the-lab/visualize/)
 
-## 4. No Code: Build Prediction Models with IBM Cloud Pak for Data using AutoAI
+## 4. No Code Approach: Build Prediction Models with IBM Cloud Pak for Data using AutoAI
 
 This section demonstrates how to build AI models without any code. After the project is created in step 2.1, click on Add to project option on top right and select AutoAI experiment as asset type.
 
