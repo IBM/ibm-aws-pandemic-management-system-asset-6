@@ -21,7 +21,7 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, update this section when the video is created-->
 ## Watch the Video
 
-Coming soon!
+[![video](http://img.youtube.com/vi/JstuY1-qq00/0.jpg)](https://www.youtube.com/watch?v=JstuY1-qq00)
 
 # Steps
 
