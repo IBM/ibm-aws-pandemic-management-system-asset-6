@@ -8,7 +8,7 @@ When you have completed this code pattern, you will understand how to:
 * Visualize the actual vs predicted values in IBM Cloud Pak for Data Cognos Dashboard Embedded
 * Build and compare different time-series models with no code in IBM Cloud Pak for Data AutoAI Experiments
 
-![architecture](https://media.github.ibm.com/user/244854/files/76d71780-c18d-11ec-9cfb-ab3fef49ff70)
+![architecture](doc/source/images/architecture.png)
 
 ## Flow
 
