@@ -4,9 +4,9 @@ In this code pattern, you will build time-series machine learning models and vis
 
 When you have completed this code pattern, you will understand how to:
 
-* Build a state of the art Long Short Term Memory(LSTM) prediction models using IBM Cloud Pak for Data Jupyter Notebook
+* Build state of the art Long Short Term Memory(LSTM) prediction models using IBM Cloud Pak for Data Jupyter Notebook
 * Visualize the actual vs predicted values in IBM Cloud Pak for Data Cognos Dashboard Embedded
-* Build and compare different time-series models with no code in IBM Cloud Pak for Data AutoAI Experiments
+* Build and compare different predictive models with ‘No code approach’ in IBM Cloud Pak for Data using Watson AutoAI Experiments
 
 ![architecture](doc/source/images/architecture.png)
 
