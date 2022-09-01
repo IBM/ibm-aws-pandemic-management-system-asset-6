@@ -384,7 +384,7 @@ In this section, you will build and train high-quality predictive models quickly
 * You should see the Input list updated with the sample values. Hit Predict to generate predictions.
 ![alt-text](doc/source/images/pred-output.png?classes=shadow)
 
-* You can see the predicted value is 1 under Result section which means the risk index is predicted as Low for the input data of Brussels Region with 100 cases on a given day.
+* You can see the predicted value is 0 under Result section which means the risk index is predicted as Low for the input data of Brussels Region with 100 cases on a given day.
 
 You have learnt how to build AI predictive models without any code, deploy the model and generate predictions. Feel free to play around to get comfortable using AutoAI for generating accurate predictions.
 
