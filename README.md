@@ -4,9 +4,9 @@ In this code pattern, you will build time-series machine learning models and vis
 
 When you have completed this code pattern, you will understand how to:
 
-* Build a state of the art Long Short Term Memory(LSTM) prediction models using IBM Cloud Pak for Data Jupyter Notebook
-* Visualize the actual vs predicted values in IBM Cloud Pak for Data Cognos Dashboard Embedded
-* Build and compare different time-series models with no code in IBM Cloud Pak for Data AutoAI Experiments
+* Build classification and time-series models in IBM Cloud Pak for Data Watson Studio Jupyter notebooks.
+* Visualize data in IBM Cloud Pak for Data Cognos Dashboard Embedded.
+* Build and compare different classification models in IBM Cloud Pak for Data AutoAI Experiments.
 
 ![architecture](doc/source/images/architecture.png)
 
@@ -17,11 +17,6 @@ When you have completed this code pattern, you will understand how to:
 3. Different models are built and evaluated in Jupyter Notebooks and the final prediction data is stored back into S3 bucket
 4. The datasets from the S3 bucket is copied into Watson Studio Project and loaded into AutoAI. Different models are built and compared in AutoAI with no code
 5. The prediction data produced by the Jupyter Notebook models stored in S3 bucket is read by Cognos Dashboard Embedded to visualize the data in the form of interactive dashboard  
-
-<!--Optionally, update this section when the video is created-->
-## Watch the Video
-
-Coming soon!
 
 # Steps
 
@@ -62,11 +57,13 @@ Create a S3 bucket in AWS by refering to the AWS documentation.
 
 ## 2. Setup a project in Cloud Pak for Data
 
+In this step, you will learn to create a project and setup a connection to Amazon S3 bucket in your IBM Cloud Pak for Data. This is essential because all the dataset resides in Amazon S3 Bucket.
+
 ### 2.1. Create a Project
 
 * Create a project in IBM Cloud Pak for Data. Click on the **Hamburger** menu, and select **All Projects**.
 
-  ![cpd-projects](https://media.github.ibm.com/user/244854/files/e6560280-c19f-11ec-8bd8-e2ffaf2b50e9)
+  ![cpd-projects]()
 
 * Click on **New Project**.
   * Select project type as **Analytics project**.
@@ -76,9 +73,9 @@ Create a S3 bucket in AWS by refering to the AWS documentation.
 
 * Once the project is created click on **View Project**. You should see the overview of the project as shown below.
 
-  ![cpd-dashboard](https://media.github.ibm.com/user/244854/files/071f5780-c1a2-11ec-9240-a1268af3704d)
+  ![cpd-dashboard]()
 
-* Click on the **Assets** tab and you will see **Notebooks** and **Dashboards**.
+* Click on the **Assets** tab and you will see **Data** and **Notebooks**.
 
 ### 2.2. Create a Connection to S3
 
@@ -88,7 +85,7 @@ Create a S3 bucket in AWS by refering to the AWS documentation.
   * Click on **Test connection** and you will see connection successful message if you have entered the correct credentials
   * Click on **Create**.
 
-  ![successful-connection](https://media.github.ibm.com/user/244854/files/0e933080-c1a3-11ec-91c4-0109ac997823)
+  ![successful-connection]()
 
 * Once the connection is created, you will see the connection in Assets tab under **Data assets**. With this connection you can access all the datasets present in your S3 bucket from your Cloud Pak for Data project.
 
@@ -96,6 +93,7 @@ Create a S3 bucket in AWS by refering to the AWS documentation.
 
 In the Code Approach you will learn how to build two types of prediction models in Watson Studio Jupyter Notebooks. As a Developer you will have full control over the model’s hyperparameters and the training data in this section.
 
+> What are Hyperparameters? A hyperparameter is a parameter whose value is used to control the learning process in a Machine Learning Algorithm. The same kind of machine learning models can require different constraints, weights or learning rates to generalize different data patterns. Hence we tune or optimize the hyperparameters so that the model can optimally solve the machine learning problem.
 The section is divided into following sub-sections:
 
 * 3.1. [About the Notebooks](#31-about-the-notebooks)
@@ -157,8 +155,8 @@ In this lab exercise, you will learn a popular opensource machine learning algor
 
   ![notebook-preview](doc/source/images/notebook1-preview.png?classes=shadow)
 
-* Before running the notebook, you need to add the S3 connection to the notebook.
-  * Click on the third code cell in the notebook.
+* You need to add the S3 connection to the notebook.
+  * Click on the empty second code cell in the notebook.
   * Click on **find and add data** button on top right.
   * Click on **Connections** tab.
   * You will see your connection variable. Click on **Insert to code** and select **pandas DataFrame**.
@@ -222,12 +220,12 @@ In this lab exercise, you will learn a popular opensource machine learning algor
 
   ![notebook-preview](doc/source/images/notebook2-preview.png?classes=shadow)
 
-* Before running the notebook, you need to add the S3 connection to the notebook.
-  * Click on the third code cell in the notebook.
+* You need to add the S3 connection to the notebook.
+  * Click on the empty second code cell in the notebook.
   * Click on **find and add data** button on top right.
   * Click on **Connections** tab.
   * You will see your connection variable. Click on **Insert to code** and select **pandas DataFrame**.
-  * Select the **ts-wallonia-grouped.csv** dataset from the connection variable.
+  * Select the **ts-brussels-grouped.csv** dataset from the connection variable.
 
   ![add-data-connection](doc/source/images/add-data-connection-nb2.gif?classes=shadow)
 
@@ -322,113 +320,74 @@ You have successfully completed this lab exercise.
 
 ## 4. No Code Approach: Build Prediction Models with IBM Cloud Pak for Data using AutoAI
 
-This section demonstrates how to build AI models without any code. After the project is created in step 2.1, click on Add to project option on top right and select AutoAI experiment as asset type.
+In this section, you will build and train high-quality predictive models quickly with no-code and simplify AI lifecycle management using Watson Studio's AutoAI. AutoAI automates tasks for data scientists, tasks such as feature engineering and selection, choosing the type of machine learning algorithm; building an analytical model based on the algorithm; hyperparameter optimization, training the model on tested data sets and running the model to generate scores and findings.
 
-![](doc/source/images/add-to-prj.png)
+* Navigate to the project, click on **Add to project** option on top right and select **AutoAI experiment** as asset type.
 
-Create an AutoAI experiment by giving it a name & select the environment definition as 8vCPU and 32GB RAM.
+* Create an AutoAI experiment by giving it a name.
+![alt-text](doc/source/images/autoai-add.gif)
 
-![](doc/source/images/create-autoai.png)
+* Add the data file, click on **Select from project** and select the `RI-data-ML.csv` file from the project's data assets.
+![alt-text](doc/source/images/auto-ai-2.gif?classes=shadow)
 
-Add the data file by selecting Browse or Select from project. Select the [RI-data-ML.csv](data/RI-data-ML.csv) file from the project.
+* Click on **No** for creating a time series forecast. We are building a multi class classifier. Select `Risk_Index` as the option to predict and hit **Run experiment**.
+![alt-text](doc/source/images/auto-ai-3.gif?classes=shadow)
 
-![](doc/source/images/add-data.png)
+* It will take a couple of minutes to complete the experiment. You will see Experiment completed on the right side of the canvas.
+![alt-text](doc/source/images/gen-pipe.png?classes=shadow)
 
-Click on Select from project and select the data asset as shown below.
+* Review the eight pipelines generated per below.
+![alt-text](doc/source/images/rev-pipelines.png?classes=shadow)
 
-![](doc/source/images/sel-asset.png)
+* Click on first pipeline (Rank 1) and choose **Save as** option on the top right side.
+![alt-text](doc/source/images/save-pipeline.png?classes=shadow)
 
-Click on 'No' for creating a time series forecast. We are building a multi class classifier. Select Risk_Index as the option to predict and hit Run experiment.
+* Click on **create**.
+![alt-text](doc/source/images/save-as-model.png?classes=shadow)
 
-![](doc/source/images/run-exp.png)
+* You should see the message Model saved successfully per below. Click on **View in project** option.
+![alt-text](doc/source/images/model-saved.png?classes=shadow)
 
-It will take a couple of minutes to complete the experiment. You will see Experiment completed on the right side of the canvas.
+* Click on **Promote to deployment space**.
+![alt-text](doc/source/images/promote-to-dep.png?classes=shadow)
 
-![](doc/source/images/gen-pipe.png)
+* Under Target space, create a new deployment space.
+![alt-text](doc/source/images/new-dep.png?classes=shadow)
 
-Review the eight pipelines generated per below.
+* Give a name to the deployment and hit create.
+![alt-text](doc/source/images/new-dep-2.png?classes=shadow)
 
-![](doc/source/images/rev-pipelines.png)
+* The deployment space gets created in a minute.
+![alt-text](doc/source/images/dep-space.png?classes=shadow)
 
-Click on first pipeline (Rank 1) and choose Save as option on the top right hand side.
+* Select the option **Go to the model in the space after promoting it** and click on **Promote**.
+![alt-text](doc/source/images/prom-dep.png?classes=shadow)
 
-![](doc/source/images/save-pipeline.png)
+* You will be redirected to the deployment space.
+![alt-text](doc/source/images/deployment-space.png?classes=shadow)
 
-Click on Save as Model and hit create.
+* Click on **New deployment**. Select Deployment type as **Online**, give a name to the deployment and hit **Create**.
+![alt-text](doc/source/images/auto-ai-4.gif?classes=shadow)
 
-![](doc/source/images/save-as-model.png)
+* It will take a couple of minutes for the deployment. The status should be Deployed per below.
+![alt-text](doc/source/images/model-deployed.png?classes=shadow)
 
-We should see the message Model saved successfully per below. Click on View in project option.
+* Click on model-deploy and you should see the Endpoint and Code Snippets per below.
 
-![](doc/source/images/model-saved.png)
+![alt-text](doc/source/images/model-endpoint.png?classes=shadow)
 
-Click on View in project option and select Promote to deployment space.
+* Lets do some predictions. Click on **Test** tab and input the data using form or Json format.
+![alt-text](doc/source/images/input-data-pred.png?classes=shadow)
 
-![](doc/source/images/promote-to-dep.png)
+* Enter the input data using single or multiple samples (Json). We will try with single sample by giving the input to Region as Brussels & 100 as `Total_cases` and click on Add to list.
+![alt-text](doc/source/images/input-model.png?classes=shadow)
 
-Under Target space, select or create a new deployment option. Lets create a new deployment.
+* You should see the Input list updated with the sample values. Hit Predict to generate predictions.
+![alt-text](doc/source/images/pred-output.png?classes=shadow)
 
-![](doc/source/images/new-dep.png)
+* You can see the predicted value is 1 under Result section which means the risk index is predicted as Low for the input data of Brussels Region with 100 cases on a given day.
 
-Give a name to the deployment and hit create.
-
-![](doc/source/images/crt-dep.png)
-
-The deployment space gets created in a minute.
-
-![](doc/source/images/dep-space.png)
-
-We need to promote the deployment by clicking on Promote at the bottom right corner.
-
-![](doc/source/images/prom-dep.png)
-
-We should see a message stating successfully promoted the model to the deployment space.
-
-![](doc/source/images/successfully-promoted.png)
-
-Click on the **Hamburger** menu, and select Deployments.
-
-![](doc/source/images/hamburger.png)
-
-Click on Predict-RI deployment which was created a couple of steps back.
-
-![](doc/source/images/predict-ri.png)
-
-Click on Assets and click on the Random Forest Classifier model.
-
-![](doc/source/images/model-for-dep.png)
-
-Click on New deployment.
-
-![](doc/source/images/new-deploy.png)
-
-Select Deployment type as Online, give a name to the deployment and hit Create.
-
-![](doc/source/images/crt-dep.png)
-
-It will take a couple of minutes for the deployment. The status should be Deployed per below.
-
-![](doc/source/images/model-deployed.png)
-
-Click on model-deploy and you should see the Endpoint and Code Snippets per below.
-
-![](doc/source/images/model-endpoint.png)
-
-Lets do some predictions. Click on Test option and input the data using form or Json format.
-
-![](doc/source/images/input-data-pred.png)
-
-Enter the input data using single or multiple samples (Json). We will try with single sample by giving the input to Region as Brussels & 100 as Total_cases and click on Add to list.
-
-![](doc/source/images/input-model.png)
-
-You should see the Input list updated with the sample values. Hit Predict to generate predictions.
-
-![](doc/source/images/pred-output.png)
-
-We can see the predicted value is 1 under Result section which means the risk index is predicted as Low for the input data of Brussels Region with 100 cases on a given day.
-
-We have learnt how to build AI predictive models without any code, deploy the model and generate predictions. Feel free to play around to get comfortable using AutoAI for generating accurate predictions.
+You have learnt how to build AI predictive models without any code, deploy the model and generate predictions. Feel free to play around to get comfortable using AutoAI for generating accurate predictions.
 
 ## 5. Visualize the Predictions in IBM Cloud Pak for Data Cognos Embedded Dashboard
 
@@ -443,6 +402,8 @@ The section is divided into following sub-sections:
 * 5.2. [Analyze Cognos Embedded Dashboard](#52-analyze-cognos-embedded-dashboard)
 
 ### 5.1. Setup Cognos Embedded Dashboard
+
+You need to create a new Dashboard in your Cloud Pak for Data project in order to visualize the analytical results. In this section you will learn how to setup a new Cognos Embedded Dashboard in your project.
 
 #### Create a new Cognos Embedded Dashboard
 
