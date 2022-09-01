@@ -63,7 +63,7 @@ In this step, you will learn to create a project and setup a connection to Amazo
 
 * Create a project in IBM Cloud Pak for Data. Click on the **Hamburger** menu, and select **All Projects**.
 
-  ![cpd-projects]()
+  ![cpd-projects](doc/source/cpd-project.png)
 
 * Click on **New Project**.
   * Select project type as **Analytics project**.
@@ -73,7 +73,7 @@ In this step, you will learn to create a project and setup a connection to Amazo
 
 * Once the project is created click on **View Project**. You should see the overview of the project as shown below.
 
-  ![cpd-dashboard]()
+  ![cpd-dashboard](doc/source/images/cpd-project.png)
 
 * Click on the **Assets** tab and you will see **Data** and **Notebooks**.
 
@@ -85,7 +85,7 @@ In this step, you will learn to create a project and setup a connection to Amazo
   * Click on **Test connection** and you will see connection successful message if you have entered the correct credentials
   * Click on **Create**.
 
-  ![successful-connection]()
+  ![successful-connection](doc/source/images/connection-successful.png)
 
 * Once the connection is created, you will see the connection in Assets tab under **Data assets**. With this connection you can access all the datasets present in your S3 bucket from your Cloud Pak for Data project.
 
