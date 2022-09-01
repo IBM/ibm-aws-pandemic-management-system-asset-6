@@ -63,7 +63,7 @@ In this step, you will learn to create a project and setup a connection to Amazo
 
 * Create a project in IBM Cloud Pak for Data. Click on the **Hamburger** menu, and select **All Projects**.
 
-  ![cpd-projects](doc/source/images/cpd-project.png)
+  ![cpd-projects](doc/source/images/cpd-all-projects.png)
 
 * Click on **New Project**.
   * Select project type as **Analytics project**.
