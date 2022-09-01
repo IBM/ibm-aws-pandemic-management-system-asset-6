@@ -373,7 +373,6 @@ In this section, you will build and train high-quality predictive models quickly
 ![alt-text](doc/source/images/model-deployed.png?classes=shadow)
 
 * Click on model-deploy and you should see the Endpoint and Code Snippets per below.
-
 ![alt-text](doc/source/images/model-endpoint.png?classes=shadow)
 
 * Lets do some predictions. Click on **Test** tab and input the data using form or Json format.
